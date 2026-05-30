@@ -1,0 +1,13 @@
+EXTRACT ---?---> TRANSFORM
+
+REMARKS (to be done in 'transform'): 
+
+1) a lot of generic 'object' types. MUST CHANGE THEM
+2) customerID is float. CHANGE TO INT
+3) InvoiceDate is object. CHANGE TO datetime64[ns]
+4) 1 missing description and 58 missing customerID's 
+5) There are 36 duplicate rows (they exist at least two times). drop them in transform (use raw_data.drop_duplicates())
+6) There are negative quantities 
+
+
+* There are InvoiceNo's with letters in them so can't change all of them to INT.
